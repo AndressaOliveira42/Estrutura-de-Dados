@@ -1,0 +1,39 @@
+* Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package javaapplication2;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author AndressaGomes
+ */
+public class VetordeNomes {
+ public static void main(String[]args) { 
+     String[] Nomes = {"maria","marcia","jessica","Bruno","Geise","Andressa","Elena","Ana","Leticia","laura"};
+     
+     Scanner sc = new Scanner(System.in);
+       System.out.println("Digite Um Nome de Pessoa:");
+       
+       String NomeBuscado = sc.nextLine();
+        Boolean Achou = false;
+       
+       for (int i = 0; i < Nomes.length; i++){
+           if (Nomes[i].equals(NomeBuscado)) {
+           
+       Achou = true;
+           break;
+       }
+       }   
+           if (Achou){
+               System.out.println("Achei");
+           }
+               
+               else{
+               System.out.println("Nao Achei");
+           }
+               sc.close();
+       }
+       }
+ 
